@@ -1,0 +1,71 @@
+.baner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 150px;
+  background: linear-gradient(to bottom, #002f6c, #007bff);
+}
+.baner__container {
+  padding: 0 35px;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.baner__bottom {
+  background-color: #002f6c;
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  padding: 15px 20px;
+}
+.baner__img img {
+  width: 100%;
+  max-width: 368px;
+  height: 104px;
+}
+.program-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+.program-list li a {
+  color: white;
+}
+.baner__more {
+  display: none;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}
+.submenu-baner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+.submenu-baner span {
+  text-transform: uppercase;
+  color: white;
+}
+.baner__more button {
+  width: 25px;
+  height: 25px;
+  background: url("../assets/img/more.svg") no-repeat center center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+.submenu-baner:hover .submenu {
+  display: block;
+}
